@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './RightContentStyle.css'
 
 const RightContent = () => {
@@ -11,6 +11,7 @@ const RightContent = () => {
   //   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/800px-Microsoft_Azure.svg.png",
     
   // ];
+  const [toggleplay , setTogglePlay]=useState(4)
 
   const row1=[
     {
@@ -56,6 +57,7 @@ const RightContent = () => {
 
     },
   ]
+  
   return (
     <div className='Right-Content-main-div'>
       <div className='Right-Content-sub-top-div'>
@@ -75,18 +77,18 @@ const RightContent = () => {
       <div className='Right-Content-Tools-List-div'>
         <p>Tools List</p>
         <div className='Right-Content-Tools-List-div-radio-item'>
-        <input type="radio" name="speed" id="slow" />
+        <input onClick={()=>setTogglePlay(1)} type="radio" name="speed" id="slow" />
         <label htmlFor="slow">Slow</label>
-        <input type="radio" name="speed" id="regular" />
+        <input onClick={()=>setTogglePlay(4)} type="radio" name="speed" id="regular" />
         <label htmlFor="regular">Regular</label>
-        <input type="radio" name="speed" id="fast" />
+        <input onClick={()=>setTogglePlay(2)} type="radio" name="speed" id="fast" />
         <label htmlFor="fast">Fast</label>
-        <input type="radio" name="speed" id="manual" />
+        <input onClick={()=>setTogglePlay(3)} type="radio" name="speed" id="manual" />
         <label htmlFor="manual">Manual scroll</label>
         </div>
       </div>
       <div className='Right-Content-Auto-Scrolling'>
-        <div className='Right-Content-Auto-Scrolling-sub-div-two'>
+        <div className={toggleplay === 1 ? 'Right-Content-Auto-Scrolling-sub-div-slow' : toggleplay === 2 ? 'Right-Content-Auto-Scrolling-sub-div-fast' : toggleplay === 3 ? 'Right-Content-Auto-Scrolling-sub-div-two-stop' : 'Right-Content-Auto-Scrolling-sub-div-regular'}>
         {row1.map((items)=>(
           <div key={items.id} className='Right-Content-Auto-Scrolling-image-div'>
             <img src={items.src} alt="" />
@@ -98,13 +100,13 @@ const RightContent = () => {
               N/A
             </div>
             <div className='Right-Content-Auto-Scrolling-lowest-Items'>
-            <i class="fa-solid fa-cloud"></i>
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <i className="fa-solid fa-cloud"></i>
+            <i className="fa-solid fa-screwdriver-wrench"></i>
             </div>
           </div>
         ))}
         </div>
-        <div className='Right-Content-Auto-Scrolling-sub-div-two'>
+        <div className={toggleplay === 1 ? 'Right-Content-Auto-Scrolling-sub-div-slow' : toggleplay === 2 ? 'Right-Content-Auto-Scrolling-sub-div-fast' : toggleplay === 3 ? 'Right-Content-Auto-Scrolling-sub-div-stop-two' : 'Right-Content-Auto-Scrolling-sub-div-regular'}>
         {row1.map((items)=>(
           <div key={items.id} className='Right-Content-Auto-Scrolling-image-div'>
             <img src={items.src} alt="" />
@@ -116,8 +118,8 @@ const RightContent = () => {
               N/A
             </div>
             <div className='Right-Content-Auto-Scrolling-lowest-Items'>
-            <i class="fa-solid fa-cloud"></i>
-            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <i className="fa-solid fa-cloud"></i>
+            <i className="fa-solid fa-screwdriver-wrench"></i>
             </div>
           </div>
         ))}

@@ -62,11 +62,9 @@
   width: 21.5vw;
   overflow: hidden;
   user-select: none;
-  /* z-index: 3; */
-  /* background-color: rgb(255, 255, 255,0.2); */
 margin-top: 1vh;
 }
-/* .Right-Content-Auto-Scrolling-sub-div{
+.Right-Content-Auto-Scrolling-sub-div-slow{
     flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -74,17 +72,10 @@ margin-top: 1vh;
   justify-content: space-around;
   white-space: nowrap;
   width: 100%;
-  animation: scrollY 5s linear infinite;
+  animation: scrollY 10s linear infinite;
+  position: relative;
 }
-@keyframes scrollY {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  } */
-.Right-Content-Auto-Scrolling-sub-div-two{
+.Right-Content-Auto-Scrolling-sub-div-regular{
     flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -92,17 +83,41 @@ margin-top: 1vh;
   justify-content: space-around;
   white-space: nowrap;
   width: 100%;
-  animation: scrollY 5s linear infinite;
+  animation: scrollY 7s linear infinite;
+  position: relative;
+}
+.Right-Content-Auto-Scrolling-sub-div-fast{
+    flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  width: 100%;
+  animation: scrollY 3s linear infinite;
   position: relative;
 }
 @keyframes scrollY {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-100%);
-    }
+  from {
+    transform: translateY(0);
   }
+  to {
+    transform: translateY(-100%);
+  }
+}
+.Right-Content-Auto-Scrolling-sub-div-two-stop{
+  flex-shrink: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+white-space: nowrap;
+width: 100%;
+position: relative;
+}
+.Right-Content-Auto-Scrolling-sub-div-stop-two{
+    display: none;
+}
 .Right-Content-Auto-Scrolling-image-div{
     display: grid;
   place-items: center;
@@ -118,7 +133,6 @@ margin-top: 1vh;
     object-fit: contain;
   width: 4vw;
   height: 7vh;
-  /* border: 1px solid black; */
   margin-bottom: 2vh;
   border-radius: 0.5rem;
   aspect-ratio: 16/9;

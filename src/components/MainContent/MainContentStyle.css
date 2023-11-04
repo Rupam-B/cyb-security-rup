@@ -4,7 +4,49 @@
     top: 11vh;
     color: white;
     width: 60vw;
-    height: 150vh;
+    height: 100vh;
     background: rgb(0, 0, 0);
     padding: 1rem;
+}
+.Main-Content-sub-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main-Content-Central-Display{
+    width: 90%;
+    height: 40vh;
+    /* border: 1px solid red; */
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.Percent-Calc-main-div{
+    position: relative;
+    height: 30vh;
+    width: 15vw;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(#FFD700 300deg , #000000 0deg);
+}
+.Percent-Calc-main-div::before{
+    content: '';
+    position: absolute;
+    height: 24vh;
+    width: 12vw;
+    background-color: black;
+    border-radius: 50%;
+
+}
+.Percent-Calc-main-div span{
+    color: #FFD700;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: relative;
 }
