@@ -1,0 +1,70 @@
+.Navbar-main-div{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+.Navbar-logo-div img{
+    height: 7vh;
+    width: 15vw;
+    object-fit: cover;
+}
+.Navbar-centre-div{
+    background-color: rgb(30, 27, 27);
+    color: white;
+    width: 50vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+.Navbar-centre-div h3 span{
+    font-size: 0.8rem;
+    margin-left: 1.5vw;
+}
+.Navbar-Right-div{
+    background-color: rgb(30, 27, 27);
+    color: white;
+    width: 35vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+}
+.Navbar-Right-div ul{  
+    display: flex;
+    justify-content: space-between;
+}
+.Navbar-Right-div ul li{ 
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    width: 12vw;
+    font-size: 0.8rem;
+    padding-left: 3vw;
+    color: rgb(255, 255, 255,0.7);
+}
+.Navbar-Right-div ul a{ 
+    text-decoration: none;
+    width: 12vw;
+}
+.score-calc-circle{
+    color: red;
+    font-size: 1.5rem;
+    margin-right: 0.6vw;
+
+}
+.errors-exclam{
+    color: yellow;
+    font-size: 1.5rem;
+    margin-right: 0.6vw;
+
+}
+.arrow-less-than{
+    color: rgb(43, 0, 255);
+    font-size: 0.8rem;
+    margin-left: 0.6vw;
+    padding-top: 1vh;
+
+}

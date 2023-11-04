@@ -1,0 +1,65 @@
+.Lower-Nav-main-div{
+    position: fixed;
+    left: 15vw;
+    top: 7vh;
+    height: 4vh;
+    width: 85vw;
+    background: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.Lower-Nav-Sub-div{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    
+    
+    padding-left: 2vw;
+    color: white;
+}
+.Lower-Nav-info{
+    padding-right: 1vw;
+}
+.Lower-Nav-Sub-div-angle-down{
+    font-size: 0.8rem;
+}
+.Lower-Nav-Sub-div-Third-Item{
+    display: flex;
+    width: 7vw;
+    justify-content: space-between;
+}
+.Lower-Nav-Sub-div-Third-Item i{
+    font-size: 0.8rem;
+}
+
+.Lower-Nav-Sub-div-two{
+    padding-left: 4vw;
+}
+.Lower-Nav-Sub-div-two-Button-one{
+    padding:0.3rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border: none;
+    margin-right: 0.5vw;
+    border-radius: 3px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+.Lower-Nav-Sub-div-two-Button-one:hover{
+    background-color: rgb(45, 45, 45);
+}
+.Lower-Nav-Sub-div-two-Button-two{
+    padding:0.3rem;
+    background-color: rgb(6, 6, 254,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+.Lower-Nav-Sub-div-two-Button-two:hover{
+    background-color: rgba(48, 48, 255, 0.8);
+}

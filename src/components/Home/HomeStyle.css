@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(34, 1, 1); */
+}
+.Home-main-container{
+    position: fixed;
+    color: white;
+    padding: 2rem;
+    width: 15vw;
+    height: 100vh;
+    top: 7vh;
+    background-color: rgb(30, 27, 27);
+}
+.Home-Top{
+    display: flex;
+    justify-content: space-between;
+}
+.Home-Top-Logo{
+    margin-right: 1vw;
+}
+.Home-Top-Sub-div-angle-down{
+    padding-top: 1.3vh;
+    cursor: pointer;
+}
+.Hide-Home-angle-down-content{
+    display: none;
+}
+.show-Home-angle-down-content{
+    display: flex;
+    background-color: rgb(25, 23, 23);
+    height: 5vh;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* --------- */
+.Home-Sidebar-lists{
+    margin-top: 3vh;
+}
+.Home-Li-contents{
+    list-style: none;
+    color: rgb(255, 255, 255,0.8);
+    font-size: 0.8rem;
+    margin-top: 3vh;
+}
+.Home-Li-contents-Logo{
+    margin-right: 1vw;
+    width: 1vw;
+}
