@@ -145,6 +145,7 @@ position: relative;
 }
 .Right-Content-Auto-Scrolling-image-div-Content-First-para{
   font-size: 0.7rem;
+  width: 10vw;
 }
 .Right-Content-Auto-Scrolling-image-div-Content-second-para{
   font-size: 0.6rem;
@@ -152,6 +153,7 @@ position: relative;
   font-weight: bold;
 }
 .Right-Content-Auto-Scrolling-image-div-Content p{
+  width: 10vw;
   text-wrap: wrap;
 }
 .Right-Content-Auto-Scrolling-NA-div{

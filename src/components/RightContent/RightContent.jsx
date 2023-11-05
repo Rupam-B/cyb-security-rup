@@ -8,42 +8,42 @@ const RightContent = () => {
     {
       id:1,
       src:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/800px-Microsoft_Azure.svg.png",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
     {
       id:2,
       src:"https://www.freeiconspng.com/thumbs/amazon-icon/amazon-icon-8.png",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
     {
       id:3,
       src:"https://cdn.vox-cdn.com/thumbor/SEEvZdiXcs0CS-YbPj2gm6AJ8qc=/0x0:3151x2048/1400x1400/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
     {
       id:4,
       src:"https://seeklogo.com/images/B/byjus-logo-E37962D240-seeklogo.com.png",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
     {
       id:5,
       src:"https://www.carlogos.org/logo/Tata-Group-logo-3840x2160.png",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
     {
       id:6,
       src:"https://imgd.aeplcdn.com/1200x900/n/cw/ec/155485/front-logo0.jpeg?isig=0&wm=0",
-      title:'Azure Networking Front Doors Azure Networking Front Doors',
+      title:'Azure Networking Front Doors',
       place:'Local'
 
     },
