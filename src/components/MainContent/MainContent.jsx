@@ -24,21 +24,21 @@ const MainContent = () => {
     ctx.strokeStyle = 'yellow';
     ctx.lineWidth = 8;
 
-    const centerX = window.innerWidth / 2; // Center of the screen
-    const startX = centerX - window.innerWidth * 0.5; // 40vw to the left of the center
-    const endX = centerX + window.innerWidth * 0.5; // 40vw to the right of the center
+    const centerX = window.innerWidth / 2;
+    const startX = centerX - window.innerWidth * 0.5; 
+    const endX = centerX + window.innerWidth * 0.5; 
 
-    // Draw a line
+    
     ctx.beginPath();
-    ctx.moveTo(startX, 90); // Starting point (x, y)
-    ctx.lineTo(endX, -100); // Ending point (x, y)
-    ctx.stroke(); // Render the line
+    ctx.moveTo(startX, 90);
+    ctx.lineTo(endX, -100); 
+    ctx.stroke(); 
 
-    // Draw another line
+    
     ctx.beginPath();
-    ctx.moveTo(startX, 130); // Starting point (x, y)
-    ctx.lineTo(endX, 325); // Ending point (x, y)
-    ctx.stroke(); // Render the line
+    ctx.moveTo(startX, 130);
+    ctx.lineTo(endX, 325); 
+    ctx.stroke(); 
 
     return () => clearInterval(progress);
   }, [progressStartValue, progressEndValue]);
@@ -49,7 +49,6 @@ const MainContent = () => {
       <div className='Main-Content-sub-div'>
       <div className='Main-Content-Central-Display'>
         <div className='Percent-Calc-main-div' style={{background: `conic-gradient(#FFD700 ${progressStartValue*3.6}deg , #000000 0deg)`}}><span>{progressStartValue}%</span></div>
-        {/* <div>Central Display</div> */}
       </div>
       <canvas ref={canvasRef} width={window.innerWidth/3} height={200} />
       </div>

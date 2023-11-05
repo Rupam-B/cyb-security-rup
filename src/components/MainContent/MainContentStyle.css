@@ -18,11 +18,9 @@
 .Main-Content-Central-Display{
     width: 90%;
     height: 40vh;
-    /* border: 1px solid red; */
     padding: 3rem;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 .Percent-Calc-main-div{
     position: relative;
